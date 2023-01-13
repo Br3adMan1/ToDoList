@@ -1,0 +1,24 @@
+.bar
+{
+    background-color:hsl(235, 19%, 35%);
+    border-width: 0;
+    height: 1.5rem;
+    border: none;
+}
+.input
+{
+    width: 80%;
+    height: 100%;
+    padding: 0;
+    background-color:hsl(235, 19%, 35%);
+    outline: none;
+    border: none;
+}
+.barPosition
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.3rem;
+}
+
