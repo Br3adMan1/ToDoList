@@ -1,7 +1,7 @@
 .desktopDark
 {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     background-image: url('../images/bg-desktop-dark.jpg');
     background-color: hsl(235, 21%, 11%);

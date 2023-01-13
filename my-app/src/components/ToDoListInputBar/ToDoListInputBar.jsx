@@ -1,16 +1,14 @@
 import React, { useState } from 'react'
+import ToDoListButton from '../ToDoListButton/ToDoListButton';
 import "./ToDoListInputBar.styling.css"
-import CheckboxImage from  "../../images/icon-check.svg"
 
-const ToDoListInputBar=()=>
-{
-    const [input,setinput]=useState("");
-    return(
+
+    const ToDoListInputBar=({handleKeyPress,handleChange})=>
+    {
+        return(
         <div className='bar barPosition'>
-            <button>
-                <img src={CheckboxImage} className="CheckboxImage"></img>
-            </button>
-            <input type="text" placeholder="Create a new todo..."  className="input"/> 
+            <ToDoListButton></ToDoListButton>
+            <input type="text" placeholder="Create a new todo..." onKeyDownCapture={handleKeyPress} onChange={handleChange} className="input"/> 
         </div>
     );
 }
